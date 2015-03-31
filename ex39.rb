@@ -46,6 +46,14 @@ cities.each do |abbrev, city|
 	puts "#{abbrev} has the city #{city}"
 end
 
+#Both at the same time
+puts '-' * 10
+states.each do |state, abbrev|
+	city = cities[abbrev]
+	puts "#{state} is abbreviated #{abbrev} and has city #{city}"
+end
+
+
 puts '-' * 10
 state = states['Texas']
 
